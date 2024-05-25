@@ -30,6 +30,7 @@ main {
 }
 
 .card {
+  background-color: #fff;
   width: 476px;
   border: 2px solid #000;
   border-radius: 0 65px 0 0;
