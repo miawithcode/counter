@@ -3,6 +3,7 @@ import Count from './Count';
 import ButtonContainer from './ButtonContainer';
 import ResetButton from './ResetButton';
 import Title from './Title';
+import CountButton from './CountButton';
 
 const Card = () => {
   const [count, setCount] = useState(0);
@@ -32,7 +33,10 @@ const Card = () => {
       <Title isLocked={isLocked} />
       <Count count={count} />
       <ResetButton setCount={setCount} />
-      <ButtonContainer setCount={setCount} isLocked={isLocked} />
+      <ButtonContainer>
+        <CountButton type="minus" setCount={setCount} isLocked={isLocked} />
+        <CountButton type="plus" setCount={setCount} isLocked={isLocked} />
+      </ButtonContainer>
     </div>
   );
 };
