@@ -73,8 +73,7 @@ main {
 }
 
 .reset-btn-icon,
-.plus-btn-icon,
-.minus-btn-icon {
+.count-btn-icon {
   height: 2rem;
   width: 2rem;
 }
@@ -98,15 +97,15 @@ main {
   justify-content: center;
   align-items: center;
   transition: all 0.2s;
-}
-
-.plus-btn {
   opacity: 0.9;
-  background-color: #a0deff;
 }
 
-.minus-btn {
+.btn:first-child {
   background-color: #cde8e5;
+}
+
+.btn:last-child {
+  background-color: #a0deff;
 }
 
 .btn:hover {
