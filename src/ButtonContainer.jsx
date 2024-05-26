@@ -1,10 +1,10 @@
 import CountButton from './CountButton';
 
-const ButtonContainer = ({ setCount }) => {
+const ButtonContainer = ({ setCount, isLocked }) => {
   return (
     <div className="btn-container">
-      <CountButton type="minus" setCount={setCount} />
-      <CountButton type="plus" setCount={setCount} />
+      <CountButton type="minus" setCount={setCount} isLocked={isLocked} />
+      <CountButton type="plus" setCount={setCount} isLocked={isLocked} />
     </div>
   );
 };

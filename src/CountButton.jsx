@@ -1,18 +1,26 @@
 import { MinusIcon, PlusIcon } from '@radix-ui/react-icons';
 
-const CountButton = ({ type, setCount }) => {
+const CountButton = ({ type, setCount, isLocked }) => {
   const handleClick = () => {
     setCount((prev) => {
       if (type === 'minus') {
-        return prev - 1;
+        const newCount = prev - 1;
+        if (newCount < 0) {
+          return 0;
+        }
+        return newCount;
       } else {
-        return prev + 1;
+        const newCount = prev + 1;
+        if (newCount > 5) {
+          return 5;
+        }
+        return newCount;
       }
     });
   };
 
   return (
-    <button onClick={handleClick} className="btn">
+    <button disabled={isLocked} onClick={handleClick} className="btn">
       {type === 'minus' ? (
         <MinusIcon className="count-btn-icon" />
       ) : (

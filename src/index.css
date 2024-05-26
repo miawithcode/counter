@@ -32,6 +32,7 @@ main {
 .card {
   background-color: #fff;
   width: 476px;
+  height: 665px;
   border: 2px solid #000;
   border-radius: 0 65px 0 0;
   box-shadow: 8px 8px 0px rgba(0, 0, 0, 8);
@@ -42,14 +43,15 @@ main {
   padding: 3.75rem 0;
 }
 
-.card-limit {
-  border: 1px solid #c73659;
+.card-locked {
+  background-color: #fde8e8;
 }
 
 .title {
   text-transform: uppercase;
   letter-spacing: 1px;
   max-width: 200px;
+  height: 5rem;
   text-align: center;
   line-height: 0.9;
   font-weight: 500;
