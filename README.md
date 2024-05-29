@@ -5,7 +5,7 @@
 ![](./public/screenshot.png)
 
 <div align="center">
-  <a href="react-counter-mia.vercel.app" target="_blank">Try Demo</a>
+  <a href="https://react-counter-mia.vercel.app" target="_blank">Try Demo</a>
 </div>
 
 ## Tech Stack
